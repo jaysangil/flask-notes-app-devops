@@ -65,6 +65,9 @@ db.sqlite3-journal
 instance/
 .webassets-cache
 
+# Flask instance folder
+instance/
+
 # Scrapy stuff:
 .scrapy
 
@@ -135,6 +138,27 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Docker artifacts
+*.log
+*.pid
+*.sock
+*.tar
+docker-compose.override.yml
+
+# Terraform state and backup files
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform.tfvars
+*.tfstate
+*.tfstate.backup
+crash.log
+
+# SSH keys (don't commit these!)
+*.pem
+*.key
+
 
 # Spyder project settings
 .spyderproject
